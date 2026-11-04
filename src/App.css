@@ -1,1 +1,129 @@
+.app {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px 28px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
 
+.app h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.todo-input {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-input button {
+  padding: 8px 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  background: #4a6cf7;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-input button:disabled {
+  background: #b6c1e8;
+  cursor: not-allowed;
+}
+
+.todo-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background: #4a6cf7;
+  border-color: #4a6cf7;
+  color: #fff;
+}
+
+.todo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.todo-text {
+  font-size: 15px;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  border: none;
+  background: none;
+  color: #c0392b;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 20px 0;
+}
+
+.todo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #666;
+}
+
+.todo-footer button {
+  border: none;
+  background: none;
+  color: #4a6cf7;
+  cursor: pointer;
+  font-size: 14px;
+}
